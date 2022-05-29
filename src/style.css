@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Montserrat&display=swap');
+
+.header {
+    background: rgb(9, 46, 70);
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 0;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.input__container .input {
+    width: 85%;
+    text-indent: 1rem;
+}
+
+.header h1 {
+    margin-bottom: 1em;
+    font-weight: 700;
+    font-size: '3.5rem';   
+}
+
+h1 {
+    font-family: 'Bigelow Rules', cursive;
+    line-height: 1.2;
+}
+
+.app-title {
+    font-family: 'Bigelow Rules', cursive;
+    font-size: 3.5rem;
+    color: rgb(12, 202, 196);
+}
+
+.card {
+    grid-auto-flow: dense;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+}
+
+div .img p:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.monsters-search-box-light {
+    width: 50%;
+    text-indent: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 0;
+    outline: none;
+}
+
+.monsters-search-box-dark {
+    width: 50%;
+    text-indent: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 0;
+    outline: none;
+    background-color: #363537;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .input {
+        font-size: 2rem;
+    }
+
+    .card-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .card-container p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width:320px) {
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .input {
+        font-size: 2rem;
+    }
+
+    .card-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .card-container p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .input {
+        font-size: 2rem;
+    }
+
+    .card-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .card-container p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .input {
+        font-size: 2rem;
+    }
+
+    .card-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .card-container p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .card-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .input__container .input {
+        width: 50%;
+    }
+
+    .input {
+        font-size: 1.5rem;
+    }
+}
+
+.card-container {
+    background: rgba(72, 177, 247, 0.25);
+    display: flex;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.75em;
+    margin-top: 1.3em;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+
+.card-list {
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    
+    grid-gap: 20px;
+}
